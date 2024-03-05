@@ -1,1 +1,50 @@
-# Project-course---underwater-Underwater-Colorimetry
+# Project-course-underwater-Underwater-Colorimetry
+Apply principles of underwater image formation
+and colorimetry we learned in the course to a real-world dataset.
+
+# Relevant parametres
+%Number of charts in the pictures
+```matlab
+num_chart = 5;
+ ```   
+%Distance from the viewer
+  ```matlab
+index_depth=5;
+ ```
+%Number of patch you want to do white balance 
+```matlab
+patch_number=4;
+ ```
+
+# Instructions
+For each chart, mark the colors with the mask you get in ex.1, do this for every chart in the picture.
+Then get the depth of every chart with ex.2, mark every chart and right manullay the distance for every chart. save this in the parametrs of depth_array.
+
+ex.3+ex.4 is for calculate and delete backscatter and calulate Dc:
+
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/e7c9a5e6-991e-47bd-b215-ffd509f4fc76" width="500" height="200">
+
+ex.5+ex.6+ex.7 is to caululate the J_c and do white balance:
+
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/1b838213-cad3-4c6b-a654-476117b7fa9b" width="100" height="50">
+
+ex.8+ex.9+ex.10+ex.11 is for do the transformation between RGB to XYZ and the to sRGB to get the right color like in the air.
+
+# Examples
+
+The color in the water for the first chart:
+
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/212cb80d-d861-448f-8593-687eaabbb846" width="500" height="300">
+
+
+after all the step we will get:
+
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/91f505fd-7ffa-41d8-a196-c376f628ec25" width="500" height="300">
+
+
+
+
+
+
+
+
