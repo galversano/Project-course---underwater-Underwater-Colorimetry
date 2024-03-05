@@ -50,12 +50,12 @@ When index wb is white-balance
 
 The color in the water for the first chart:
 
-<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/24fdfd27-9e50-4eda-a453-6db12965cd24" width="500" height="300">
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/24fdfd27-9e50-4eda-a453-6db12965cd24" width="400" height="200">
 
 
 __After all the step we will get:__
 
-<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/91f505fd-7ffa-41d8-a196-c376f628ec25" width="500" height="300">
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/91f505fd-7ffa-41d8-a196-c376f628ec25" width="400" height="200">
 
 
 Reference for the picture:
