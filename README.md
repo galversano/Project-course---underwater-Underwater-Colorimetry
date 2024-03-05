@@ -1,4 +1,5 @@
 # Project-course-Underwater-Colorimetry
+
 Apply principles of underwater image formation
 and colorimetry we learned in the course to a real-world dataset.
 
@@ -31,7 +32,9 @@ ex.3+ex.4 is for calculate and delete backscatter and calulate Dc:
 
 ex.5+ex.6+ex.7 is to caululate the J_c and do white balance:
 
-<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/1b838213-cad3-4c6b-a654-476117b7fa9b" width="100" height="30">
+$$
+J_c = D_c \cdot \exp(\beta^{D_c} z)
+$$
 
 ex.8+ex.9+ex.10+ex.11 is for do the transformation between RGB to XYZ and the to sRGB to get the right color like in the air.
 
