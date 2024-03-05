@@ -60,7 +60,7 @@ __After all the step we will get:__
 
 Reference for the picture:
 
-<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/982ecc8b-6f7b-4b4f-a956-25f082ed59cb" width="500" height="300">
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/554d67be-730e-49fd-8635-25a104494036" width="500" height="300">
 
 
 
