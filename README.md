@@ -11,7 +11,7 @@ num_chart = 5;
   ```matlab
 index_depth=5;
  ```
-%Number of patch you want to do white balance 
+%Number of patch you want to do the white balance 
 ```matlab
 patch_number=4;
  ```
