@@ -37,9 +37,15 @@ The color in the water for the first chart:
 <img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/212cb80d-d861-448f-8593-687eaabbb846" width="500" height="300">
 
 
-after all the step we will get:
+__After all the step we will get:__
 
 <img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/91f505fd-7ffa-41d8-a196-c376f628ec25" width="500" height="300">
+
+
+Reference for the picture:
+
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/982ecc8b-6f7b-4b4f-a956-25f082ed59cb" width="500" height="300">
+
 
 
 
