@@ -1,6 +1,11 @@
-# Project-course-underwater-Underwater-Colorimetry
+# Project-course-Underwater-Colorimetry
 Apply principles of underwater image formation
 and colorimetry we learned in the course to a real-world dataset.
+
+For this project i used this photos:
+
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/dd2421df-8a26-4b71-b1c6-350117b42683" width="700" height="300">
+
 
 # Relevant parametres
 %Number of charts in the pictures
@@ -22,11 +27,11 @@ Then get the depth of every chart with ex.2, mark every chart and right manullay
 
 ex.3+ex.4 is for calculate and delete backscatter and calulate Dc:
 
-<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/e7c9a5e6-991e-47bd-b215-ffd509f4fc76" width="500" height="200">
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/e7c9a5e6-991e-47bd-b215-ffd509f4fc76" width="500" height="150">
 
 ex.5+ex.6+ex.7 is to caululate the J_c and do white balance:
 
-<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/1b838213-cad3-4c6b-a654-476117b7fa9b" width="100" height="50">
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/1b838213-cad3-4c6b-a654-476117b7fa9b" width="100" height="30">
 
 ex.8+ex.9+ex.10+ex.11 is for do the transformation between RGB to XYZ and the to sRGB to get the right color like in the air.
 
