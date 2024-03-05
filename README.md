@@ -23,8 +23,10 @@ patch_number=4;
  ```
 
 # Instructions
-For each chart, mark the colors with the mask you get in ex.1, do this for every chart in the picture.
-Then get the depth of every chart with ex.2, mark every chart and right manullay the distance for every chart. save this in the parametrs of depth_array.
+
+For each chart in the picture, identify and label the colors using the mask obtained in ex.1. 
+Then, determine the depth of each chart using the method described in ex.2. 
+Mark each chart accordingly and manually record the distance for each one. Save this information in the 'depth_array' parameters.
 
 ex.3+ex.4 is for calculate and delete backscatter and calulate Dc:
 
@@ -37,6 +39,10 @@ J_c = D_c \cdot \exp(\beta^{D_c} z)
 $$
 
 ex.8+ex.9+ex.10+ex.11 is for do the transformation between RGB to XYZ and the to sRGB to get the right color like in the air.
+
+$$
+Jc_wb(RGB)->XYZ_wb->sRGB
+$$
 
 # Examples
 
