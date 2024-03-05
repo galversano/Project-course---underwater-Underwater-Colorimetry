@@ -35,20 +35,22 @@ ex.3+ex.4 is for calculate and delete backscatter and calulate Dc:
 ex.5+ex.6+ex.7 is to caululate the J_c and do white balance:
 
 $$
-J_c = D_c \cdot \exp(\beta^{D_c} z)
+J_c = D_c \cdot \exp(\beta^{D}_c z)
 $$
 
 ex.8+ex.9+ex.10+ex.11 is for do the transformation between RGB to XYZ and the to sRGB to get the right color like in the air.
 
 $$
-Jc_wb(RGB)->XYZ_wb->sRGB
+J_{c}(RGB) \rightarrow Jc_{wb}(RGB) \rightarrow XYZ_{wb} \rightarrow sRGB
 $$
+
+When index wb is white-balance
 
 # Examples
 
 The color in the water for the first chart:
 
-<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/212cb80d-d861-448f-8593-687eaabbb846" width="500" height="300">
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/24fdfd27-9e50-4eda-a453-6db12965cd24" width="500" height="300">
 
 
 __After all the step we will get:__
