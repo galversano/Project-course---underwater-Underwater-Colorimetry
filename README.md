@@ -48,7 +48,7 @@ When index wb is white-balance
 
 # Examples
 
-The color in the water for the first chart:
+__The color in the water for the first chart:__
 
 <img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/24fdfd27-9e50-4eda-a453-6db12965cd24" width="400" height="200">
 
