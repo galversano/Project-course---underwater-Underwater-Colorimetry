@@ -8,6 +8,12 @@ For this project i used this photos:
 <img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/dd2421df-8a26-4b71-b1c6-350117b42683" width="700" height="300">
 
 
+Here are the steps we've completed in this project:
+
+<img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/2ce0387e-139b-4e7f-a665-a14311ad95f0" width="500" height="100">
+
+
+
 # Relevant parametres
 %Number of charts in the pictures
 ```matlab
