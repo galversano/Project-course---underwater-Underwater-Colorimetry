@@ -154,19 +154,26 @@ non_zero_slices = any(any(J_c ~= 0, 1), 2);
 % Remove slices containing zeros
 J_c = J_c(:,:,non_zero_slices);
 
-for i=1:num_chart-1
-    if i~=index_depth
-        plot(depth_array(index_depth),J_c(:,1,i),'o','MarkerEdgeColor', 'r')
+% We get all the results for all the depth of color chart
+%first index-num_patch second-RGB third-number-of-Jc forth-num-color-chart
+full_result_Jc(:,:,:,index_depth)=J_c
+
+%% plot- after full_result_Jc is complete
+
+for i=1:num_chart
+    figure(5)
+        plot(depth_array(i),full_result_Jc(2:18,1,1,i),'o','MarkerEdgeColor', 'r')
         hold on
-        plot(depth_array(index_depth),J_c(:,2,i),'o','MarkerEdgeColor', 'g')
+        plot(depth_array(i),full_result_Jc(2:18,2,1,i),'o','MarkerEdgeColor', 'g')
         hold on
-        plot(depth_array(index_depth),J_c(:,3,i),'o','MarkerEdgeColor', 'b')
+        plot(depth_array(i),full_result_Jc(2:18,3,1,i),'o','MarkerEdgeColor', 'b')
         hold on
          xlabel("z")
         ylabel("J_c")
         grid on
-    end
 end
+
+
 
 % Define the number of rows and columns for the subplot grid
 rows = 2;
@@ -187,18 +194,7 @@ for i=1:num_chart-1
 Jc_wb(:,:,i) = patch_refl(patch_number)*J_c(:,:,i)./repmat(wbpatch,[size(J_c(:,:,i),1),1]);
 end
 
-for i=1:num_chart-1
-        plot(depth_array(index_depth),Jc_wb(:,1,i),'o','MarkerEdgeColor', 'r')
-        hold on
-        plot(depth_array(index_depth),Jc_wb(:,2,i),'o','MarkerEdgeColor', 'g')
-        hold on
-        plot(depth_array(index_depth),Jc_wb(:,3,i),'o','MarkerEdgeColor', 'b')
-        hold on
-        grid on
-        xlabel("z")
-        ylabel("J-wb_c")
-        
-end
+full_result_Jc_wb(:,:,:,index_depth)=Jc_wb
 
 rows = 2;
 columns = 2;
@@ -209,6 +205,19 @@ for i = 1:4
     %title(['dz=', num2str(depth_array(i+1)-depth_array(index_depth))]);
 end
 
+%% plot- after full_result_Jc_wb is complete
+for i=1:num_chart
+    figure(7)
+        plot(depth_array(i),full_result_Jc_wb(1:18,1,1,i),'o','MarkerEdgeColor', 'r')
+        hold on
+        plot(depth_array(i),full_result_Jc_wb(1:18,2,1,i),'o','MarkerEdgeColor', 'g')
+        hold on
+        plot(depth_array(i),full_result_Jc_wb(1:18,3,1,i),'o','MarkerEdgeColor', 'b')
+        hold on
+         xlabel("z")
+        ylabel("J_cwb")
+        grid on
+end
 
 
 %% ex.8
@@ -240,18 +249,7 @@ sRGB_values(j,:,i) = applycform((XYZ_Jc(j,:,i)), XYZ_to_sRGB);
     end
 end
 
-for i=1:num_chart-1
-        plot(depth_array(index_depth),sRGB_values(:,1,i),'o','MarkerEdgeColor', 'r')
-        hold on
-        plot(depth_array(index_depth),sRGB_values(:,2,i),'o','MarkerEdgeColor', 'g')
-        hold on
-        plot(depth_array(index_depth),sRGB_values(:,3,i),'o','MarkerEdgeColor', 'b')
-        hold on
-        grid on
-        xlabel("z")
-        ylabel("sRGB")
-end
-
+full_result_sRGB(:,:,:,index_depth)=sRGB_values
 
 rows = 2;
 columns = 2;
@@ -262,6 +260,20 @@ for i = 1:4
     subplot(rows, columns, i);  % Subplot index starts from 1
     imshow(visualizeColorChecker(sRGB_values(:,:,i)));
 
+end
+
+%% plot- after sRGB is complete 
+for i=1:num_chart
+    figure(10)
+        plot(depth_array(i),full_result_sRGB(1:18,1,1,i),'o','MarkerEdgeColor', 'r')
+        hold on
+        plot(depth_array(i),full_result_sRGB(1:18,2,1,i),'o','MarkerEdgeColor', 'g')
+        hold on
+        plot(depth_array(i),full_result_sRGB(1:18,3,1,i),'o','MarkerEdgeColor', 'b')
+        hold on
+         xlabel("z")
+        ylabel("sRGB")
+        grid on
 end
 
 %% ex.11.2
@@ -290,5 +302,5 @@ end
 end
 
 mean_error= mean(error(:, 1, :), 3);
-figure(98);
+figure(12);
 plot(1:18,mean_error(:,1),'o','MarkerEdgeColor', 'r')
