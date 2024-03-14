@@ -10,9 +10,9 @@ For this project i used this photos:
 
 Here are the steps we've completed in this project:
 
-<center>
+<p align="center">
   <img src="https://github.com/galversano/Project-course---underwater-Underwater-Colorimetry/assets/66177443/2ce0387e-139b-4e7f-a665-a14311ad95f0" width="500" height="100">
-</center>
+</p>
 
 
 
