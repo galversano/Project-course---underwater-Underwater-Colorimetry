@@ -68,8 +68,8 @@ imshow(inImg)
 for col = 1:s(2)
     for  row = 1:s(1)
         curColor = colors{row,col};
-        pts(:,1) = 5*(shiftVal*col + dim*x_box);
-        pts(:,2) = 5*(-shiftVal*(-row+1) + dim*y_box);
+        pts(:,1) = 10*(shiftVal*col + dim*x_box);
+        pts(:,2) = 10*(-shiftVal*(-row+1) + dim*y_box);
         masks.(curColor).pts = pts;
         curRGB = RGB{row,col};
         tempMask{row,col} = impoly(gca,masks.(curColor).pts) ;
