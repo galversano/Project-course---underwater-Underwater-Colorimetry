@@ -23,11 +23,11 @@ num_chart = 5;
  ```   
 %Distance from the viewer
   ```matlab
-index_depth=5;
+index_depth=1;
  ```
 %Number of patch you want to do the white balance 
 ```matlab
-patch_number=4;
+patch_number=1;
  ```
 
 # Instructions
