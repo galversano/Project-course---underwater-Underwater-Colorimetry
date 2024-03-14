@@ -30,7 +30,7 @@ stdobs_spectra = interp1(stdobs(:,1),stdobs(:,2:4),WL);
 
 %% ex.1
 for i=1:num_chart
-masks = makeChartMask(I,chart,colors,20);
+masks = makeChartMask(I,chart,colors,100);
 RGB = getChartRGBvalues(I,masks,colors);
     mat_array_RGB(:, :, i) = RGB;
 end
