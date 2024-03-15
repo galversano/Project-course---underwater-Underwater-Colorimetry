@@ -295,12 +295,22 @@ best_res(:,:,5)=sRGB_values(:,:,1)
 
 %% ex.12
 error=[]
+for k=1:num_chart-1
 for i=1:num_chart-1
+    if k<=i
 for j=1:18
-error(j,:,i)=real(acos((best_res(j,:,i)*best_res(j,:,i+1)')/(norm(best_res(j,:,i)))*(norm(best_res(j,:,i+1)))))
-end    
+error(j,:,i,k)=real(acos((best_res_sRGB(j,:,k)*best_res_sRGB(j,:,i+1)')/(norm(best_res_sRGB(j,:,k)))*(norm(best_res_sRGB(j,:,i+1)))))
+end  
+    end
+end
 end
 
-mean_error= mean(error(:, 1, :), 3);
-figure(12);
+sum_error_array_chart = sum(error, 3);
+sum_full_error_array = sum(sum_error_array_chart(:,:,1,:), 4);
+mean_error=sum_full_error_array*(1/10)
+
+figure(98);
 plot(1:18,mean_error(:,1),'o','MarkerEdgeColor', 'r')
+xlabel("num-patch")
+ylabel("mean-error")
+grid on
